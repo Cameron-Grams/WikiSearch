@@ -1,33 +1,14 @@
-$("#searchFor").autocomplete({
-    source: function(request, response) {
-        $.ajax({
-            url: "http://en.wikipedia.org/w/api.php",
-            dataType: "jsonp",
-            data: {
-                'action': "opensearch",
-                'format': "json",
-                'search': request.term
-            },
-            success: function(data) {
-                 response(data[1]);
-            }
-        })
-      },
-//      after: $('#mainDisp'),
-//    appendTo: $('#mainDisp'), 
-//    position: {my:"left top", at: 'left bottom', of: "#mainDisp"},
-    select: function(event, ui){
-      var fistOfFirst = ui.item.label;
-      console.log(fistOfFirst);
-      $("#mainDisp").empty();
-      searchFx();
-}
-})
-
 $("#searchBtn").on('click', function(event){
+  console.log("clicked the button");
   $("#mainDisp").empty();
   searchFx()
-  });
+  })
+
+$("#searchFor").keypress(function(e){
+  if (e.which == 13){
+    $("#searchBtn").click();
+  }
+})
                    
 function searchFx(){
     var searchInput = $('#searchFor').val();

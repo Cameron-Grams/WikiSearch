@@ -1,0 +1,90 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.search {
+  background-color: rgba(89, 89, 89, 0.4);
+  border-radius: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#lower {
+  margin: 1.2em;
+}
+
+#randBtn {
+  float: right;
+  background-color: rgba(0,0,0, 0.7);
+  margin: 0.2em;
+  padding: 0.6em;
+  font-size: 1.2em;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#searchBtn {
+  margin-top: 5px;  
+  width: 20%;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  padding: 0.3em;
+}
+
+.shell {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 10%;
+}
+
+.main {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+p {
+  padding: 5px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#intro {
+  font-size: 2em;
+  margin: 0 0 0.5em 0;
+}
+
+p.retTitle {
+  color: rgb(128, 0 , 0);
+}
+
+.linkFormat {
+  padding: 5px;
+  color: yellow;
+}
+
+.outerShell {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.innerShell {
+  border: solid 1px #fff;
+  border-radius: 20px;
+  background-color: rgba(38, 38, 38, 0.6);
+  width: 80%;
+  text-align: center;
+  margin: 0.5em auto 0.5em;
+  padding: 0.25em;
+}
+
+
+
